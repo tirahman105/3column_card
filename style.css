@@ -4,11 +4,19 @@
 body{
 	margin: 0;
 	padding: 0;
+	background-color: hsl(0, 0%, 95%);
+		
+font-family: 'Lexend Deca', sans-serif;
+
 }
 .container{
+
 	display: flex;
 	position: relative;
 	color: white;
+}
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
 }
 
 .col-1{
@@ -17,8 +25,10 @@ body{
 	left: 160px;
 	padding: 60px;
 	background-color: hsl(31, 77%, 52%);
-	height: 400px;
+	height: 480px;
 	width: 320px;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px;
 }
 .col-2{
 	position: absolute;
@@ -26,7 +36,7 @@ body{
 	left: 480px;
 	padding: 60px;
 	background-color: hsl(184, 100%, 22%);
-	height: 400px;
+	height: 480px;
 	width: 320px;
 }
 .col-3{
@@ -35,15 +45,49 @@ body{
 	left: 800px;;
 	padding: 60px;
 	background-color: hsl(179, 100%, 13%);
-	height: 400px;
+	height: 480px;
 	width: 320px;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px;
 }
 .text{
-	font-size: 15px;
+	font-size: 14px;
 }
 
-button {
+
+.card-btn{
+	margin-top: 50px;
+	width: 190px;
+}
+.col-1 .card-btn {
 	padding: 10px;
 	border-radius: 30px;
 	border-style: none;
+	color: hsl(31, 77%, 52%);
 }
+
+
+.col-2 .card-btn {
+	padding: 10px;
+	border-radius: 30px;
+	border-style: none;
+	color: hsl(184, 100%, 22%);
+}
+
+.col-3 .card-btn {
+	padding: 10px;
+	border-radius: 30px;
+	border-style: none;
+	color: hsl(179, 100%, 13%);
+
+}
+
+.card-btn:hover{
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	cursor: pointer;
+
+}
+
+
